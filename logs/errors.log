@@ -1,0 +1,74 @@
+{"level":"error","message":"POST en /- 10:44:56 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 10:47:26 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 10:52:42 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 10:55:50 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 10:57:44 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 11:02:38 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 11:03:50 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 11:04:24 - Error al crear el producto"}
+{"level":"error","message":"DELETE en /delete/644a775178aa1c3a9e8aabad- 20:17:36 - Error al eliminar el producto"}
+{"level":"error","message":"DELETE en /delete/asdasdasrfsdafsdfsdfsdag- 20:22:58 - Error al eliminar el producto"}
+{"level":"error","message":"POST en /login- 21:26:09 - Usuario no encontrado"}
+{"level":"error","message":"POST en /login- 21:28:08 - Usuario no encontrado"}
+{"level":"error","message":"POST en /login- 21:37:36 - Contraseña incorrecta"}
+{"level":"error","message":"POST en /login- 21:41:12 - Usuario no encontrado"}
+{"level":"error","message":"POST en /login- 22:54:20 - Usuario no encontrado"}
+{"level":"error","message":"POST en /login- 22:54:38 - Contraseña incorrecta"}
+{"level":"error","message":"POST en /register- 23:14:17 - Error al registrar el usuario"}
+{"level":"error","message":"POST en /register- 23:14:17 - Error al loggear el usuario"}
+{"level":"error","message":"POST en /register- 23:16:15 - Error al registrar el usuario"}
+{"level":"error","message":"POST en /register- 23:17:23 - Error al registrar el usuario"}
+{"level":"error","message":"POST en /register- 23:17:23 - Error al loggear el usuario"}
+{"level":"error","message":"POST en /register- 23:20:46 - Error al registrar el usuario"}
+{"level":"error","message":"POST en /register- 23:20:46 - Error al loggear el usuario"}
+{"level":"error","message":"POST en /register- 23:20:58 - Error al loggear el usuario"}
+{"level":"error","message":"POST en /register- 23:22:25 - Error al registrar el el usuario"}
+{"level":"error","message":"POST en /register- 23:27:50 - Error al crear el usuario"}
+{"level":"error","message":"POST en /register- 23:28:44 - Error al crear el usuario"}
+{"level":"error","message":"POST en /register- 23:29:55 - Error al crear el usuario"}
+{"level":"error","message":"POST en /register- 23:31:29 - Error al crear el usuario"}
+{"level":"error","message":"POST en /register- 23:32:28 - Error al crear el usuario"}
+{"level":"error","message":"POST en /register- 23:33:58 - Error al crear el usuario"}
+{"level":"error","message":"POST en /- 06:38:36 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:39:33 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:42:46 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:44:43 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:46:18 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:47:35 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:48:13 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:50:45 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:53:36 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:56:48 - Error al crear el producto"}
+{"level":"error","message":"POST en /- 06:59:43 - Error al crear el producto"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:37:49 - Error al crear el usuario"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:39:04 - soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:39:51 - soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:40:56 [object Object]- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:41:02 [object Object]- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:41:46 null- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:43:00- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:43:21- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:49:55- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:55:49- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:56:23- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:56:43- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 23:59:39- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 00:00:50- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 00:01:35- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 00:03:35- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 00:04:04- soy error 3"}
+{"level":"error","message":"POST en /premium/644a8573fda0bcd34c3227dc- 00:06:46- soy error 3"}
+{"level":"error","message":"POST en /login- 00:07:08 - Missing credentials"}
+{"level":"error","message":"POST en /login- 00:07:29 - Missing credentials"}
+{"level":"error","message":"POST en /purchase- 21:30:10"}
+{"level":"error","message":"POST en /purchase- 21:36:26"}
+{"level":"error","message":"POST en /purchase- 21:37:17"}
+{"level":"error","message":"POST en /purchase- 21:37:47"}
+{"level":"error","message":"POST en /purchase- 21:53:31"}
+{"level":"error","message":"POST en /purchase- 22:23:08"}
+{"level":"error","message":"POST en /purchase- 22:29:08"}
+{"level":"error","message":"POST en /purchase- 22:31:16"}
+{"level":"error","message":"POST en /purchase- 22:32:44"}
+{"level":"error","message":"POST en /purchase- 22:34:08"}
+{"level":"error","message":"POST en /purchase- 22:34:38"}
+{"level":"error","message":"POST en /purchase- 22:35:25"}
