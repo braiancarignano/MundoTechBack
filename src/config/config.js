@@ -8,7 +8,7 @@ const MAIL_SERVICE = process.env.MAIL_SERVICE;
 const MAIL_PORT = process.env.MAIL_PORT;
 const MAIL_USER = process.env.MAIL_USER;
 const MAIL_PASS = process.env.MAIL_PASS;
-const ENVIROMENT = "DE";
+const ENVIROMENT = "DEV";
 module.exports = {
   LINK_DB,
   COOKIE_SECRET,

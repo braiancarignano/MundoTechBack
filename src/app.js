@@ -1,16 +1,19 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
-const app = express();
 const session = require("express-session");
-const port = 8080;
 const passport = require("passport");
 const initializePassport = require("./config/passportConfig.js");
-const { LINK_DB, COOKIE_SECRET } = require("./config/config.js");
-const cors = require("cors");
-const { Server } = require("socket.io");
 const swaggerJsdoc = require("swagger-jsdoc");
 const swaggerUiExpress = require("swagger-ui-express");
+const cors = require("cors");
+const path = require("path");
+const dirname = __dirname;
+const apiDocs = path.join(dirname, "../docs/**/*.yaml");
+const app = express();
+const port = 8080;
+const { LINK_DB, COOKIE_SECRET } = require("./config/config.js");
+const { addLogger } = require("./config/logger.js");
 const errorHandler = require("./middlewares/error.js");
 const { productsRouter } = require("./routes/products.router.js");
 const { cartRouter } = require("./routes/carts.router.js");
@@ -19,19 +22,6 @@ const { gitHubRouter } = require("./routes/gitHub.router.js");
 const { mockingRouter } = require("./routes/mockingProducts.router.js");
 const { mailingRouter } = require("./routes/mailing.router.js");
 const { loggerRouter } = require("./routes/logger.router.js");
-const { addLogger } = require("./config/logger.js");
-const httpServer = app.listen(port, "0.0.0.0", () =>
-  console.log(`Escuchando en ${port}`)
-);
-const newServer = new Server(httpServer);
-const path = require("path");
-const dirname = __dirname;
-const apiDocs = path.join(dirname, "../docs/**/*.yaml");
-
-app.use(errorHandler);
-app.use(addLogger);
-
-app.use(cookieParser(COOKIE_SECRET));
 
 //Configuración passport
 initializePassport();
@@ -53,6 +43,9 @@ app.use(
     credentials: true,
   })
 );
+app.use(errorHandler);
+app.use(addLogger);
+app.use(cookieParser(COOKIE_SECRET));
 app.use("/api/products", productsRouter);
 app.use("/api/carts", cartRouter);
 app.use("/api/sessions", userRouter);
@@ -74,6 +67,8 @@ const SwaggerOptions = {
 };
 const specs = swaggerJsdoc(SwaggerOptions);
 app.use("/apidocs", swaggerUiExpress.serve, swaggerUiExpress.setup(specs));
+
+app.listen(port, () => console.log(`Listening on ${port}`));
 
 const environment = async () => {
   try {
