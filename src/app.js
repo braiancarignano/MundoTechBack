@@ -3,7 +3,7 @@ const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const app = express();
 const session = require("express-session");
-const PORT = 8080;
+const port = 8080;
 const passport = require("passport");
 const initializePassport = require("./config/passportConfig.js");
 const { LINK_DB, COOKIE_SECRET } = require("./config/config.js");
@@ -20,8 +20,10 @@ const { mockingRouter } = require("./routes/mockingProducts.router.js");
 const { mailingRouter } = require("./routes/mailing.router.js");
 const { loggerRouter } = require("./routes/logger.router.js");
 const { addLogger } = require("./config/logger.js");
-const httpServer = app.listen(PORT, () => console.log(`Escuchando en ${PORT}`));
-const socketServer = new Server(httpServer);
+const httpServer = app.listen(port, "0.0.0.0", () =>
+  console.log(`Escuchando en ${port}`)
+);
+const newServer = new Server(httpServer);
 const path = require("path");
 const dirname = __dirname;
 const apiDocs = path.join(dirname, "../docs/**/*.yaml");
@@ -46,7 +48,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -58,22 +60,6 @@ app.use("/api/sessions", gitHubRouter);
 app.use("/api/mockingproducts", mockingRouter);
 app.use("/api/mailing", mailingRouter);
 app.use("/api/logger", loggerRouter);
-
-socketServer.on("connection", (socket) => {
-  console.log("Nuevo cliente conectado");
-  socket.on("mensaje", (data) => {
-    console.log(data);
-  });
-  socket.emit("mesagge", "Este mensaje es enviado desde el servidor a todos");
-  // socket.on("productoNuevo", async (data)=>{
-  //     modelProducts.create(data)
-  // })
-  // socket.on("idEliminar", (data)=>{
-  //     modelProducts.deleteOne(data)
-  // })
-  // let products = modelProducts.find().lean()
-  // socket.emit("products", products)
-});
 
 //Swagger
 const SwaggerOptions = {
